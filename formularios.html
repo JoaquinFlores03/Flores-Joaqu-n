@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasbyMessi Formulario</title>
+    <meta name="author" content="Joaquín Augusto Flores"/>
+    <meta name="description" content="La hidratación positiva tiene más de lo bueno y nada de lo malo: es una combinación innovadora de electrolitos, vitaminas y antioxidantes, con un sabor natural, sin edulcorantes ni colorantes artificiales. Sabor sin igual. Sin comprometer. Leo quiere compartir esto con todos.">
+    <meta itemprop="location" content="2056 W Walnut St, Chicago, IL 60612, Estados Unidos">
+    <link rel="stylesheet" href="estilos-form.css" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html">
+                <img src="../tp integral/recursos/logo.png" alt="logo mas by Messi" id="logo">
+            </a>
+                <nav id="menuPrincipal">
+                <ul>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="#segundoForm">Regitrarse</a></li>
+                    <li><a href="#divFooter">Contacto</a></li>
+                    <li><a href="encuestas.html">Encuestas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a href="https://www.adidas.com.ar/"><aside class="publicidad" id="adidas"></aside></a>
+    <main>
+        <section class="primeraSec">
+            <div class="contenedor" id="secUno">
+                <div class="blancaIzq">
+                    <img src="recursos/messi-form1.png" alt="Messi Inter Miami" id="pngMessi">
+                </div>
+                <form action="#" id="primerForm">
+                    <h1 class="textIniciar">Iniciar Sesión</h1>
+                    <a href="#" id="linkGoogle"><div class="google"><img src="recursos/google.png" alt="logo google" id="logoGoogle">
+                        <p>Iniciar sesión con Google</p> </div></a>
+                    <label for="nUsuario"><p class="textOrden">Ingrese su nombre de Usuario</p></label>
+                    <div class="cajaInput">
+                        <input type="text" placeholder="Nombre de Usuario" required id="nUsuario">
+                        <i class='bx bxs-user' ></i>
+                    </div>
+                    <p class="textOrden">Ingrese su contraseña</p>
+                    <div class="cajaInput">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class='bx bxs-lock'></i>
+                    </div>
+                    <div class="dosOpciones">
+                        <button type="button" class="btnIngresar">Ingresar</button>
+                        <button type="button" class="btnContact">Contactanos</button>
+                    </div>
+                    <p class="textNotienes">¿No tienes cuenta? <a href="#segundoForm" class="linkRegis">Registrate</a></p>
+                </form>
+            </div>
+        </section>
+        <a href="https://www.playstation.com/es-mx/"><aside class="publicidad" id="play"></aside></a>
+        <section class="segundaSec">
+            <div class="contenedor" id="secDos">
+                <form action="#" id="segundoForm">
+                    <h1 class="textIniciar">Registrarse</h1>
+                    <a href="#" id="linkGoogle"><div class="google"><img src="recursos/google.png" alt="logo google" id="logoGoogle">
+                        <p>Registrarse con Google</p> </div></a>
+                    <div id="cajaGrande">
+                        <div class="formIzquierda">
+                            <label for="nUsuario2"><p class="textOrden2">Ingrese su nombre completo</p></label>
+                            <div class="cajaInput2">
+                                <input type="text" placeholder="Nombre completo" required id="nUsuario2">
+                            </div>
+                            <label for="nUsuario2"><p class="textOrden2">Ingrese su email</p></label>
+                            <div class="cajaInput2">
+                                <input type="email" placeholder="nombre@gmail.com" required id="nUsuario2">
+                            </div>
+                            <label for="nUsuario2"><p class="textOrden2">Ingrese un nombre de Usuario</p></label>
+                            <div class="cajaInput2">
+                                <input type="text" placeholder="Nombre de Usuario" required id="nUsuario2">
+                            </div>
+                            <p class="textOrden2">Ingrese una contraseña</p>
+                            <div class="cajaInput2">
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                        </div>
+                        <div class="formDerecha">
+                            <label><p class="textOrden2">Escoja su género</p></label>
+                            <div class="radioContenedor">
+                                <div class="input-container">
+                                  <input id="walk" type="radio" name="radio">
+                                  <div class="cajaRadio">
+                                    <label for="walk">Masculino</label>
+                                  </div>
+                                </div>
+                        
+                                <div class="input-container">
+                                  <input id="bike" type="radio" name="radio">
+                                  <div class="cajaRadio">
+                                    <label for="bike">Femenino</label>
+                                  </div>
+                                </div>
+                        
+                                <div class="input-container">
+                                  <input id="car" type="radio" name="radio">
+                                  <div class="cajaRadio">
+                                    <label for="car">Otro</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <label for="nUsuario2"><p class="textOrden2">Escoja su país de residencia</p></label>
+                              <div class="selectContenedor">
+                                <select id="pais" name="pais">
+                                    <option value="mx">México</option>    
+                                    <option value="es">España</option>    
+                                    <option value="ar" selected>Argentina</option>
+                                    <option value="usa">Estados Unidos</option>    
+                                    <option value="ec">Ecuador</option>    
+                                    <option value="ven">Venezuela</option>
+                                    <option value="ch">Chile</option>    
+                                    <option value="ur">Uruguay</option>    
+                                    <option value="pe">Perú</option>
+                                </select>
+                                <i class='bx bxs-down-arrow' id="iFlecha"></i>
+                              </div>
+                              <label for="nUsuario2"><p class="textOrden2">Seleccione su fecha de nacimiento</p></label>
+                              <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                    </div>
+                        <div class="dosOpciones2">
+                            <button type="button" class="btnIngresar">Ingresar</button>
+                            <button type="button" class="btnContact">Contactanos</button>
+                        </div>
+                    <p class="textNotienes2">¿Ya tienes cuenta? <a href="#secUno" class="linkRegis">Inicia sesión</a></p>
+                </form>
+                <div class="blancaDer">
+                    <img src="recursos/messi-form2.png" alt="Messi Inter Miami" id="pngMessi2">
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="https://www.visa.com.ar/"><aside class="publicidad" id="visa"></aside></a>
+    <footer>
+        <div class="contenedor" id="divFooter">
+            <div class="redondeado"> 
+                <div id="parteUno">
+                    <div class="cajaDiv">
+                        <div class="datos">
+                            <h3 id="chicago">CHICAGO</h3>
+                            <div class="divDatos">
+                                <img src="recursos/iconitos/ubi.png" alt="Icono ubicación" class="picsIconitos">
+                                <p>2056 W Walnut St, Chicago, IL 60612, Estados Unidos</p>
+                            </div>
+                            <div class="divDatos">
+                                <img src="recursos/iconitos/hora.png" alt="Icono horario" class="picsIconitos">
+                                <p> Abre a las 8 a.m. del martes</p>
+                            </div>
+                            <div class="divDatos">
+                                <img src="recursos/iconitos/telefono.png" alt="Icono teléfono" class="picsIconitos">
+                                <p>+1 312-455-1955</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lineaVertical"></div>
+                    <div class="cajaDiv" id="cajaRedes">
+                        <img src="recursos/iconitos/red1.png" alt="Logo Facebook" class="picsRedes">
+                        <img src="recursos/iconitos/red2.png" alt="Logo Instagram" class="picsRedes">
+                        <img src="recursos/iconitos/red3.png" alt="Logo Whatsapp" class="picsRedes">
+                        <img src="recursos/iconitos/red4.png" alt="Logo Tik Tok" class="picsRedes">
+                    </div>
+                    <div class="lineaVertical"></div>
+                    <div class="cajaDiv">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27826.34163995765!2d-80.17440732714702!3d26.18969939161715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d903c3c212f321%3A0xb818163d6d07a4f5!2sEstadio%20Chase!5e0!3m2!1ses-419!2sar!4v1719253372804!5m2!1ses-419!2sar" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div id="parteDos">
+                    <h6 id="copy">Más+ by Messi es una marca registrada utilizada bajo licencia por MÁS+ NEXT GENERATION BEVERAGE CO. Chicago, IL</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

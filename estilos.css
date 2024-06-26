@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Commissioner", sans-serif;
+}
+.titulos{
+    font-size: 64pt;
+    width: 100%;
+    vertical-align: middle;
+}
+.fuenteRara{
+    font-family: "Reggae One", system-ui;
+}
+.rosa{
+    color:rgb(255, 129, 232);
+}
+.blanco{
+    color: white;
+}
+.gris{
+    color: rgb(76, 76, 76);
+}
+.grisClaro{
+    color: rgb(183, 183, 183);
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+}
+/*
+Todo sobre el header
+*/
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#ffffff, rgb(209, 209, 209));
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+    box-shadow:6px 7px 14px 2px rgba(0, 0, 0, 0.4);
+}
+.contenedor{
+    width:1600px;
+    border: none black;
+    overflow: hidden;
+}
+#logo{
+    width: 170px;
+    height: 90%;
+}
+#menuPrincipal{
+    width: 60%;
+    height: 100px;
+    float: right;
+    margin-left: 5%;
+    background: linear-gradient( rgb(255, 129, 232), rgb(230, 89, 204));
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+}
+ul{
+    height: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#menuPrincipal ul li a:link, #menuPrincipal ul li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 14pt;
+}
+#menuPrincipal ul li a:hover{
+    color:rgb(185, 62, 187);
+}
+/*
+Todo sobre la primera sección
+*/
+.primeraSec{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(recursos/fondonegro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    display: flex;
+    justify-content: center;
+}
+.picBebida{
+    width: 100%;
+    height: 75%;
+    border: none blue;
+    margin-top: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+}
+.rectangulo{
+    height: 100%;
+    width: 60%;
+    border: none rgb(211, 211, 211);
+    background-color: gray;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+.bebidas:hover #amarilla{
+    background: linear-gradient(#ecff1e, rgb(142, 186, 12));
+    visibility: visible;
+}
+.bebidas:hover #azul{
+    background: linear-gradient(#221eff, rgb(11, 9, 128));
+    visibility: visible;
+}
+.bebidas:hover #rosada{
+    background: linear-gradient(#ff1e92, rgb(123, 12, 69));
+    visibility: visible;
+}
+.bebidas:hover #naranja{
+    background: linear-gradient(#ff8b1e, rgb(167, 71, 11));
+    visibility: visible;
+}
+.bebidas:hover .textoBebida{
+    color: white;
+}
+.bebidas:hover .picBebida{
+    filter: grayscale(0%);
+}
+.textoBebida{
+    text-align: center;
+    padding: 5px 15px;
+}
+.bebidas:hover .textoBebida{
+    filter: grayscale(0%);
+}
+.bebidas:hover{
+    transform: scale(1.05);
+}
+#secUno{
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+.bebidas{
+    width: 380px;
+    height: 85%;
+    border: none rgb(121, 0, 0);
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+/*
+Todo sobre la segunda sección
+*/
+.segundaSec{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(recursos/fondoblanco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -300px;
+    display: flex;
+    justify-content: center;
+}
+#secDos{
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    border: none chartreuse;
+}
+.picsEquipo{
+    height: 100%;
+    width: 450px;
+}
+.equipo{
+    height: 500px;
+    width: 48%;
+    border:none cyan;
+    display: flex;
+}
+.cajaDerecha{
+    display: flex;
+    flex-flow: column wrap;
+}
+.arriba{
+    border:none rgb(0, 0, 0);
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+.abajo{
+    background-color: rgb(255, 129, 232);
+    height: 30%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#palabraEquipo{
+    border: none blue;
+    height: 140px;
+    padding-top: 40px;
+}
+.lineaMessi{
+    border: none;
+    height: 1px; 
+    background-color: #aeaeae; 
+    width: 80%; 
+    margin: 10px 0;
+}
+.nombres{
+    font-size: 38pt;
+    line-height: 38pt;
+    color: rgb(255, 255, 255);
+}
+.info{
+    border: none red;
+    font-size: 14pt;
+    color: rgb(49, 49, 49);
+    margin-top: 8px;
+    padding-right: 5px;
+    width: 330px;
+}
+.comilla{
+    color:rgb(253, 120, 255);
+    font-size: 56pt;
+    border:none rgb(111, 18, 193);
+    height: 50px;
+    width: 80px;
+}
+.textFund{
+    font-size: 16pt;
+    letter-spacing: 6pt;
+    font-weight: 300;
+}
+/*
+Todo sobre la tercera sección
+*/
+.terceraSec{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(255, 129, 232);
+    display: flex;
+    justify-content: center;
+}
+#secTres{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    border: none rgb(255, 94, 0);
+    justify-content: space-around;
+}
+#tresTextos{
+    font-size: 64pt;
+    font-weight: bolder;
+    line-height: 130px;
+    margin-left: 40px;
+    color:rgb(255, 255, 255); 
+}
+#parteBaja{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+.lineaNegra{
+    border: none;
+    height: 3px; 
+    background-color: #000000; 
+    width: 97%; 
+
+}
+.unete{
+    border: solid black 3px;
+    width: 180px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+#aprovecha{
+    color:rgb(0, 0, 0); 
+}
+span{
+    background-color: rgb(255, 255, 255); 
+    color:rgb(255, 129, 232);
+}
+.unete a:link, .unete a:visited{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 14pt;
+}
+.unete a:hover{
+    border: none;
+    display: block;
+    width: 180px;
+    height: 30px;
+    color: white;
+    background-color: #000000;
+    border-radius: 30px;
+}
+/*
+Todo sobre la cuarta sección
+*/
+.cuartaSec{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(recursos/fondonegro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    display: flex;
+    justify-content: center;
+}
+#secCuatro{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    border: none rgb(255, 0, 111);
+    justify-content: space-between;
+}
+#picFamilia{
+    height: 100%;
+    width: 580px;
+}
+.divNoticias{
+    height: 100%;
+    width: 900px;
+    border: none yellow;
+    display: flex;
+    flex-flow: column wrap;
+    background: linear-gradient(#202020, rgb(0, 0, 0));
+}
+.noticiaInd{
+    width: 100%;
+    height: 33.3%;
+    border:none #221eff;
+    display: flex;
+    justify-content: space-between;
+}
+.picNoticia{
+    width: 40%;
+    height: 100%;
+}
+.textoNoticia{
+    font-size: 16pt;
+    border: none black;
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+.textoNoticia h1{
+    font-size: 24pt;
+    color: rgb(255, 129, 232);
+}
+.textoNoticia p{
+    font-size: 14pt;
+    color: rgb(107, 107, 107);
+}
+#textoNoticias{
+    writing-mode: vertical-rl;
+    z-index: 2;
+    position: absolute;
+    font-size: 74pt;
+    left: 530px;
+    color: rgb(255, 129, 232);
+}
+.textoNoticia h1 a:link, .textoNoticia h1 a:visited{
+    display: block;
+    color: rgb(255, 129, 232);
+    text-decoration: none;
+    font-size: 24pt;
+}
+.textoNoticia:hover h1 a{
+    color: #ffffff;
+}
+.textoNoticia:hover p{
+    color: #d7d7d7;
+}
+/*
+Todo sobre el footer
+*/
+footer{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(#ffffff, rgb(209, 209, 209));
+    display: flex;
+    justify-content: center;
+}
+#divFooter{
+    height: 100%;
+    border: #000000 none;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#mapa{
+    width: 350px;
+    height: 150px;
+}
+.redondeado{
+    height: 250px;
+    width: 1440px;
+    background: linear-gradient(#202020, rgb(0, 0, 0));
+    border-top-left-radius: 80px; 
+    border-top-right-radius: 80px; 
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+.cajaDiv{
+    height:100%;
+    width: 33%;
+    border: none red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parteUno{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#copy{
+    color: white;
+    font-weight: 100;
+}
+.lineaVertical{
+    width: 2px; 
+    height: 200px; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(247, 65, 186, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+#chicago{
+    background-color: #ffffff;
+    width: 80px;
+    color: black;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 18pt;
+}
+.datos{
+    width: 400px;
+    height: 135px;
+    border: none yellow;
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+.picsIconitos{
+    width: 20px;
+    height: 20px;
+}
+.divDatos{
+    height: 22px;
+    width: 100%;
+    border: none cyan;
+    display: flex;
+    gap: 5px;
+}
+.picsRedes{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+#cajaRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.picsRedes:hover{
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+}
+/*
+Todo sobre la publicidad
+*/
+aside{
+    width: 100%;
+    height: 80px;
+    border: #ecff1e none;
+}
+#play{
+    background-image: url(recursos/publicidad.webp);
+    background-repeat: repeat-x;
+    background-size:200px;
+    background-position-y: -20px;
+}
+#visa{
+    background-image: url(recursos/publicidad3.png);
+    background-repeat: repeat-x;
+    background-size:200px;
+    background-position-y: 15px;
+}
+#adidas{
+    background-image: url(recursos/publicidad2.jpeg);
+    background-repeat: repeat-x;
+    background-size:200px;
+    background-position-y: -20px;
+    margin-top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}

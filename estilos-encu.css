@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Commissioner", sans-serif;
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+}
+main{
+    width: 100%;
+    background-color: rgb(29, 225, 91);
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.fuenteRara{
+    font-family: "Reggae One", system-ui;
+}
+.rosa{
+    color:rgb(255, 129, 232);
+}
+.blanco{
+    color: white;
+}
+.gris{
+    color: rgb(76, 76, 76);
+}
+.grisClaro{
+    color: rgb(183, 183, 183);
+}
+.gold{
+    color: gold;
+}
+/*
+Todo sobre el header
+*/
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#ffffff, rgb(209, 209, 209));
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+    box-shadow:6px 7px 14px 2px rgba(0, 0, 0, 0.4);
+}
+.contenedor{
+    width:1600px;
+    border: none black;
+    overflow: hidden;
+}
+#logo{
+    width: 170px;
+    height: 90%;
+}
+#menuPrincipal{
+    width: 60%;
+    height: 100px;
+    float: right;
+    margin-left: 5%;
+    background: linear-gradient( rgb(255, 129, 232), rgb(230, 89, 204));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+ul{
+    height: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#menuPrincipal ul li a:link, #menuPrincipal ul li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 14pt;
+}
+#menuPrincipal ul li a:hover{
+    color:rgb(185, 62, 187);
+}
+/*
+Todo sobre la sección 1
+*/
+#primeraSec{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(255, 129, 232);
+    display: flex;
+    justify-content: center;
+}
+.secIntermedia{
+    position: relative;
+    width: 1600px;
+    height: 750px;
+    border: none rebeccapurple;
+    background-color: rgb(255, 129, 232);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px 60px;
+    color: rgb(0, 0, 0);
+}
+#picPack{
+    width: 400px;
+    height: 330px;
+    position: absolute;
+    right: 1100px;
+    top: 300px;
+}
+.numeroTexto{
+    align-self: flex-start;
+    width: 160px;
+    height: 300px;
+    border: none black;
+}
+#num{
+    font-size: 60pt;
+}
+.textGrande{
+    font-size: 88pt;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 129, 232);
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+.textoChico{
+    font-size: 24pt;
+}
+.lineaLarga{
+    border: none;
+    height: 3px; 
+    background-color: rgb(0, 0, 0);
+    width: 30%; 
+}
+.unete{
+    border: solid rgb(0, 0, 0) 3px;
+    color: rgb(0, 0, 0);
+    width: 180px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.unete a:link, .unete a:visited{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 14pt;
+}
+.unete a:hover{
+    border: none;
+    display: block;
+    width: 180px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*
+Todo sobre la sección 2
+*/
+#segundaSec{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(0, 0, 0); ;
+    background-image: url(recursos/fondo-pintura3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.secTablas{
+    height: 100%;
+    border: none rgb(45, 224, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    color: rgb(241, 50, 196);
+}
+.secTablas table{
+    border: none white 3px;
+    height: 80%;
+    width: 80%;
+    border-collapse: collapse;
+}
+.secTablas th{
+    border: none red;
+    width: 212.48px;
+    height: 200px;
+    padding:30px;
+    border-right: #ffffff solid 1px;
+    border-bottom: none;
+}
+.secTablas td{
+    border: none cyan;
+    text-align: center;
+    padding: 5px 25px;
+    border-right: #ffffff solid 1px;
+    border-top: none;
+}
+.secTablas tr{
+    background-color:none;
+}
+.segundaLinea{
+    color: white;
+    font-weight: bold;
+}
+.sacarLinea{
+    border-right: none ;
+}
+tr:hover .iconoTabla{
+   scale: 1.1;
+}
+/*
+Todo sobre la sección 3
+*/
+#terceraSec{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(255, 129, 232);
+    display: flex;
+    justify-content: center;
+}
+#segundaInter{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+#segundaInter hr, #segundaInter p{
+    margin-right: 50px;
+}
+
+#textGanadores{
+    width: 800px;
+    background-color: none;
+    color: black;
+    font-size: 100pt;
+    text-align: right;
+    margin-right: 50px;
+    line-height: 85pt;
+    height:500px ;
+}
+/*
+Todo sobre la sección 4
+*/
+#cuartaSec{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(0, 0, 0); ;
+}
+.secTablas2{
+    height: 100%;
+    border: none rgb(45, 224, 0);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1600px;
+    color: rgb(241, 50, 196);
+}
+.secTablas2 table{
+    border: none rgb(255, 42, 0);
+    width: 1400px;
+    height: 160px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.secTablas2 h1{
+    font-size: 42pt;
+    color:rgb(255, 255, 255);
+    margin-top: 15px;
+}
+.secTablas2 th{
+    background-color:none;
+    width: 470px;
+    height: 40px;
+}
+.secTablas2 td{
+    width: 470px;
+}
+#logoTabla{
+    width: 250px;
+    height: 100px;
+}
+#parteMasBaja{
+    border: none rgb(255, 42, 0);
+    width: 1400px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nombreWin{
+    font-size: 28pt;
+    letter-spacing: 2px;
+    color:rgb(255, 129, 232);
+    font-weight: bold;
+}
+.dorado{
+    background-color: gold;
+    padding: 20px 0px;
+}
+.dinero{
+    color: #000000;
+    letter-spacing: 8px;
+    font-size: 28pt;
+    text-align: center;
+    font-weight: bolder;
+}
+.textPremio{
+    text-align: left;
+}
+/*
+Todo sobre el footer
+*/
+footer{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(#ffffff, rgb(209, 209, 209));
+    display: flex;
+    justify-content: center;
+}
+#divFooter{
+    height: 100%;
+    border: #000000 none;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#mapa{
+    width: 350px;
+    height: 150px;
+}
+.redondeado{
+    height: 250px;
+    width: 1440px;
+    background: linear-gradient(#202020, rgb(0, 0, 0));
+    border-top-left-radius: 80px; 
+    border-top-right-radius: 80px; 
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+.cajaDiv{
+    height:100%;
+    width: 33%;
+    border: none red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parteUno{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#copy{
+    color: white;
+    font-weight: 100;
+}
+.lineaVertical{
+    width: 2px; 
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(247, 65, 186, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+#chicago{
+    background-color: #ffffff;
+    width: 80px;
+    color: black;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 18pt;
+}
+.datos{
+    width: 400px;
+    height: 135px;
+    border: none yellow;
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+.picsIconitos{
+    width: 20px;
+    height: 20px;
+}
+.divDatos{
+    height: 22px;
+    width: 100%;
+    border: none cyan;
+    display: flex;
+    gap: 5px;
+}
+.picsRedes{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+#cajaRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.picsRedes:hover{
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+}
+/*Publicidad*/
+#play{
+    background-image: url(recursos/publicidad.webp);
+    background-repeat: repeat-x;
+    background-size:cover;
+    background-position-y: 20px;
+}
+#visa{
+    background-image: url(recursos/publicidad3.png);
+    background-repeat: repeat-x;
+    background-size:200px;
+    background-position-y: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+aside{
+    width: 100%;
+    height: 80px;
+    border: #ecff1e none;
+}
+#adidas{
+    background-image: url(recursos/publicidad2.jpeg);
+    background-repeat: repeat-x;
+    background-size:200px;
+    background-position-y: -20px;
+    margin-top: 100px;
+}
+.redond{
+    border-radius: 50px;
+}
